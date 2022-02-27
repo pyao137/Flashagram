@@ -4,9 +4,9 @@ import random
 class Deck:
     def __init__(self, deckName):
         f = open("cards.json")
-        data = json.load(f)
-        self.deck = data[deckName]
-        self.size = len(data[deckName])
+        cardDict =  json.load(f)
+        self.deck = cardDict[deckName]
+        self.size = len(cardDict[deckName])
         self.index = random.randint(0, self.size - 1)
 
     def increment(self):

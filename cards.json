@@ -1,5 +1,1 @@
-{
-    "size": "2",
-    "0": [["Hello", "Hola"], ["Yes", "Si"], ["Goodbye", "Adios"]],
-    "1": [["In Java, Booleans are not primitive data types", "False"], ["The capital of Hungary is Budapest", "True"], ["The free columns of a matrix are linearly dependent on the pivot columns to the left", "True"]]
-}
+{"size": 1, "0": [["Hello", "Hola"], ["Yes", "Si"], ["Goodbye", "Adios"]]}

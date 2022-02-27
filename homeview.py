@@ -1,13 +1,13 @@
 import pygame as pg
-import json
 from button import Button
 import constants
+import json
 
 class HomeView:
     def __init__(self):
         f = open("cards.json")
-        data = json.load(f)
-        self.numDecks = int(data["size"])
+        cardDict =  json.load(f)
+        self.numDecks = cardDict["size"]
         self.font = pg.font.Font("assets/slkscre.ttf", 32)
         self.deckButtons: list[Button] = []
         btnName = "assets/homebtns/Deck_"
