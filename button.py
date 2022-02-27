@@ -1,12 +1,6 @@
 import pygame as pg
 import constants
 
-#button images
-add_btn = pg.image.load('Add_button.png').convert_alpha()
-delete_btn = pg.image.load("Delete_button.png").convert_alpha()
-flip_btn = pg.image.load("Flip_button.png").convert_alpha()
-next_btn = pg.image.load("Next_button.png").convert_alpha()
-
 #button class
 class Button:
     def __init__(self, x, y, image):
