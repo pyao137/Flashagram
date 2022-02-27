@@ -7,11 +7,11 @@ import constants
 class DeckView:
     def __init__(self, deck: Deck):
         self.deck = deck
-        self.nextButton = Button((constants.SCREEN_WIDTH / 2) - constants.BTWIDTH / 2, constants.SCREEN_HEIGHT/2 - constants.BTHEIGHT /2 + 200, 'next_button.PNG')
-        self.flipButton = Button((constants.SCREEN_WIDTH / 2) - constants.BTWIDTH / 2, constants.SCREEN_HEIGHT/2 - constants.BTHEIGHT /2 + 100, "Flip_button.PNG")
-        self.backButton = Button(10, 10, 'Back_button.png')
+        self.nextButton = Button((constants.SCREEN_WIDTH / 2) - constants.BTWIDTH / 2, constants.SCREEN_HEIGHT/2 - constants.BTHEIGHT /2 + 200, 'assets/next_button.PNG')
+        self.flipButton = Button((constants.SCREEN_WIDTH / 2) - constants.BTWIDTH / 2, constants.SCREEN_HEIGHT/2 - constants.BTHEIGHT /2 + 100, "assets/Flip_button.PNG")
+        self.backButton = Button(10, 10, 'assets/Back_button.png')
         self.flipped = False
-        self.font = pg.font.Font("slkscre.ttf", 32)
+        self.font = pg.font.Font("assets/slkscre.ttf", 32)
 
     def getCardSurface(self):
         currText = ""
