@@ -2,7 +2,6 @@ import pygame as pg
 import pygame.mouse as mouse
 import constants
 import json
-import pygame_textinput
 from pygame.locals import *
 from deck import Deck
 from deckview import DeckView
@@ -95,9 +94,9 @@ def main():
                 txt = font.render("Please enter number of cards in new deck:", True, (0, 0, 0))
             else:
                 if addview.atFront():
-                    txt = font.render("Enter front side of card:" + str(addview.numCardsAdded) + ": ", True, (0, 0, 0))
+                    txt = font.render("Enter front side of card " + str(addview.numCardsAdded) + ":", True, (0, 0, 0))
                 else:
-                    txt = font.render("Enter back side of card:" + str(addview.numCardsAdded) + ": ", True, (0, 0, 0))
+                    txt = font.render("Enter back side of card " + str(addview.numCardsAdded) + ":", True, (0, 0, 0))
             screen.blit(txt, (40, constants.SCREEN_HEIGHT / 2 - 40))
             screen.blit(addview.get().surface, (40, constants.SCREEN_HEIGHT / 2))
         if currview == "del":
