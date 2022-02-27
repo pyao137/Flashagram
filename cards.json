@@ -1,1 +1,5 @@
-{"size": 1, "0": [["Hello", "Hola"], ["Yes", "Si"], ["Goodbye", "Adios"]]}
+{
+    "size": "2",
+    "0": [["Hello", "Hola"], ["Yes", "Si"], ["Goodbye", "Adios"]],
+    "1": [["Hello", "Ndewo"], ["Thank you", "Daalu"], ["Ka chi fo", "Good night"]]
+}
