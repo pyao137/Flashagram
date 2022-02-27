@@ -16,6 +16,14 @@ class Button:
     def draw(self):
         #draw button on screen
         Screen.blit(self.image, (self.rect.x, self.rect.y))
+    
+    def isOver(self, pos):
+        #Pos is the mouse position or a tuple of (x,y) coordinates
+        if pos[0] > self.rect.x and pos[0] < self.rect.x + self.rect.width:
+            if pos[1] > self.rect.y and pos[1] < self.y + self.rect.height:
+                return True
+
+    
 
 #create button instances
 back_button = Button(100, 200, back_btn)

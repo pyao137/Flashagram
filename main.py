@@ -7,7 +7,6 @@ pg.init()
 screen = pg.display.set_mode([constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT])
 
 def main():
-
     running = True
     clock = pg.time.Clock()
     while running:
