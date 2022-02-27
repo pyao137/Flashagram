@@ -35,6 +35,8 @@ def main():
                             currview = "deck"
                             deckview = DeckView(Deck(str(k)))
         screen.fill(constants.BGCOLOR)
+        img =  pg.transform.scale(pg.image.load("assets/Flashagram_logo.png"), (175, 137.5))
+        screen.blit(img, (constants.SCREEN_WIDTH / 2 - (img.get_width() / 2), 5))
         if currview == "home":
             screen.blit(homeview.addButton.surface, homeview.addButton.rect)
             screen.blit(homeview.deleteButton.surface, homeview.deleteButton.rect)
