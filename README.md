@@ -1,4 +1,4 @@
-#Flashagram
+# Flashagram
 
 Flashagram is a simple flashcard app built using python and pygame. It allows users to flip through a deck of flashcards, as well as add new decks and delete old ones.
 
