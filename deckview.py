@@ -3,8 +3,6 @@ from deck import Deck
 from button import Button
 import constants
 
-
-
 class DeckView:
     def __init__(self, deck: Deck):
         self.deck = deck

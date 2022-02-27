@@ -66,12 +66,16 @@ def main():
                     if delview.doneButton.isOver(mouse.get_pos()):
                         val = delview.delete()
                         del cardDict[val]
+                        val = int(val)
+                        for i in range(val + 1, cardDict["size"]):
+                            temp = cardDict[str(i)]
+                            cardDict[str(i - 1)] = temp
+                            del cardDict[str(i)]
                         cardDict["size"] = cardDict["size"] - 1
                         with open("cards.json", "w") as fp:
                             json.dump(cardDict, fp)
                         homeview = HomeView()
                         currview = "home"
-
         screen.fill(constants.BGCOLOR)
         img =  pg.transform.scale(pg.image.load("assets/Flashagram_logo.png"), (175, 137.5))
         screen.blit(img, (constants.SCREEN_WIDTH / 2 - (img.get_width() / 2), 5))

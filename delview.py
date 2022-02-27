@@ -1,5 +1,4 @@
 import pygame_textinput
-import pygame as pg
 import constants
 from button import Button
 
