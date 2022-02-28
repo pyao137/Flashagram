@@ -9,17 +9,17 @@ class AddView:
         self.currCard = []
         self.numCardsAdded = 0
         self.numCards =  0
-        self.atNumCards = True
+        self.atNumCardsInput = True
         self.doneButton = Button((constants.SCREEN_WIDTH / 2) - constants.BTWIDTH / 2, constants.SCREEN_HEIGHT - constants.BTHEIGHT - 80, "assets/Done_button.PNG")
         self.numCardsInput = pygame_textinput.TextInputVisualizer()
         self.textinput = pygame_textinput.TextInputVisualizer()
         self.done = False
 
     def increment(self):
-        if self.atNumCards == True:
+        if self.atNumCardsInput == True:
             self.numCards = int(self.numCardsInput.value)
             self.textinput = pygame_textinput.TextInputVisualizer()
-            self.atNumCards = False
+            self.atNumCardsInput = False
             return
         else:
             self.currCard.append(self.textinput.value)
@@ -40,7 +40,7 @@ class AddView:
         return False
 
     def get(self):
-        if (self.atNumCards):
+        if (self.atNumCardsInput):
             return self.numCardsInput
         return self.textinput
     
